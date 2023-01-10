@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.youtube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 100px;
+    border-radius: 50% / 10%;
+    background-color: red;
+}
+
+.youtube::before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    border-radius: 4% / 50%;
+    top: 9%;
+    bottom: 9%;
+    right: -4%;
+    left: -4%;
+}
+
+.triangle {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    background-color: white;
+    transform: rotate(90deg);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    width: 40px;
+    height: 40px;
+}
